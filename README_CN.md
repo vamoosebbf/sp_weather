@@ -14,6 +14,7 @@
 |  src   | C裸机程序示例  |
 
 ## 介绍
+
 <img src="img/sp_weather.png" style="padding-right:100px;" align="right" width="500"/>
 SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置灵敏度补偿与 NTC 的三轴磁性传感器，I2C
 接口输出（最高频率 400KHz），具有出色的动态范围和精度以及超低的功耗。温湿度气压传感器 BME280，能够同时测量温湿度以及气压。可根据两颗传感器不同的器件地址来读取不同传感器的数据。
@@ -21,10 +22,13 @@ SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置
 *查看[模块规格书](doc/SP-WEATHER规格书V1.0.pdf)获取更多特性信息*
 
 ## 引脚图
+
 <img src="img/back.png" width="300" />
 
 ## 接线方式
+
 <img src="img/connection.png" height="250">
+
 |  MCU:FUN(IO)  | SP_Weather |
 | :-----------: | :--------: |
 | I2C:SDA(IO_7) |    SDA     |

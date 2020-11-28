@@ -13,16 +13,20 @@
 |    src    | C program example based on the standalone sdk |
 
 ## Introduce
+
 <img src="img/sp_weather.png" style="padding-right:100px;" align="right" width="500" />
 SP_Weather has two sensors, magnetic sensor QMC7983, which is a triaxial magnetic sensor with built-in sensitivity compensation and NTC, use I2C to output (up to 400KHz) with excellent dynamic range and precision as well as ultra-low power consumption. The temperature, humidity and barometric pressure sensor BME280 can simultaneously measure temperature, humidity and barometric pressure. The data of the two sensors can be read according to their different device addresses.
 
 *See [Specification](doc/SP-WEATHER规格书V1.0.pdf) for more information*
 
 ## Pin figure
+
 <img src="img/back.png" width="300" />
 
 ## Mode connection
+
 <img src="img/connection.png" height="250">
+
 |  MCU:FUN(IO)  | SP_Weather |
 | :-----------: | :--------: |
 | I2C:SDA(IO_7) |    SDA     |
