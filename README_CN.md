@@ -21,13 +21,10 @@ SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置
 *查看[模块规格书](doc/SP-WEATHER规格书V1.0.pdf)获取更多特性信息*
 
 ## 引脚图
-
 <img src="img/back.png" width="300" />
 
 ## 接线方式
-
 <img src="img/connection.png" height="250">
-
 |  MCU:FUN(IO)  | SP_Weather |
 | :-----------: | :--------: |
 | I2C:SDA(IO_7) |    SDA     |

@@ -23,7 +23,6 @@ SP_Weather has two sensors, magnetic sensor QMC7983, which is a triaxial magneti
 
 ## Mode connection
 <img src="img/connection.png" height="250">
-
 |  MCU:FUN(IO)  | SP_Weather |
 | :-----------: | :--------: |
 | I2C:SDA(IO_7) |    SDA     |
