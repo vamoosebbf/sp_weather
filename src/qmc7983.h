@@ -15,6 +15,6 @@
 #define QMCX983_I2CADDR  0x2C
 
 int qmc_init(void);
-void qmc_read_xyz(uint16_t *raw);
+void qmc_read_xyz(uint8_t *raw);
 
 #endif  //!__QMC7983__H__

@@ -159,7 +159,6 @@ int maix_i2c_send_data(i2c_device_number_t i2c_num, uint32_t slave_address, cons
     return 0;
 }
 
-
 /**
  * 
  * @reutrn 0: success  
@@ -259,8 +258,6 @@ void maix_i2c_deinit(i2c_device_number_t i2c_num)
         plic_irq_disable(IRQN_I2C0_INTERRUPT + i2c_num);
     }
 }
-
-
 
 static int maix_i2c_slave_irq(void *userdata)
 {

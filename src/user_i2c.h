@@ -18,7 +18,7 @@
  *  @return void.
  *
  */
-void user_delay_us(uint32_t period, void *intf_ptr);
+void bme280_delay_us(uint32_t period, void *intf_ptr);
 
 /*!
  *  @brief Function for reading the sensor's registers through I2C bus.
@@ -35,7 +35,7 @@ void user_delay_us(uint32_t period, void *intf_ptr);
  *  @retval > 0 -> Failure Info
  *
  */
-int8_t user_i2c_read(uint8_t reg_addr, uint8_t *data, uint32_t len, void *intf_ptr);
+int8_t bme280_i2c_read(uint8_t reg_addr, uint8_t *data, uint32_t len, void *intf_ptr);
 
 /*!
  *  @brief Function for writing the sensor's registers through I2C bus.
@@ -52,8 +52,15 @@ int8_t user_i2c_read(uint8_t reg_addr, uint8_t *data, uint32_t len, void *intf_p
  *  @retval BME280_E_COMM_FAIL -> Communication failure.
  *
  */
-int8_t user_i2c_write(uint8_t reg_addr, const uint8_t *data, uint32_t len, void *intf_ptr);
+int8_t bme280_i2c_write(uint8_t reg_addr, const uint8_t *data, uint32_t len, void *intf_ptr);
 
-int sp_weather_i2c_init();
+/*!
+ * @brief  initialize sp_weather module 
+*/
+int sp_weather_i2c_init(void);
+ 
+// qmc7983 i2c read and write function
+void qmc_writeto_mem(uint8_t reg, uint8_t data);
+uint8_t qmc_readfrom_mem(uint8_t reg);
 
 #endif  //!__USER_I2C__H__
