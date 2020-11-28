@@ -108,11 +108,11 @@ The corresponding IO port in the MCU schematic diagram is configured as I2C func
 
 * C
 
-    <img src="img/log_c.png" height="250">
+    <img src="img/log_c.png" height="200">
 
 * MaixPy
 
-    <img src="img/log_py.png" height = "250">
+    <img src="img/log_py.png" height = "200">
 
 ## LISENCE
 
