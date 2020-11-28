@@ -18,7 +18,7 @@
 SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置灵敏度补偿与 NTC 的三轴磁性传感器，I2C
 接口输出（最高频率 400KHz），具有出色的动态范围和精度以及超低的功耗。温湿度气压传感器 BME280，能够同时测量温湿度以及气压。可根据两颗传感器不同的器件地址来读取不同传感器的数据。
 
-*查看[模块规格书](doc/SP-LoRa规格书V1.0.pdf)获取更多特性信息*
+*查看[模块规格书](doc/SP-WEATHER规格书V1.0.pdf)获取更多特性信息*
 
 ## 引脚图
 
@@ -82,9 +82,9 @@ SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置
 * C 示例
 
   ```c
-     rslt = qmc_init(); // Magnetic sensor QMC7983 init 
-     rslt = bme280_init(&dev); // Temperature, humidity and pressure sensors BME280 init 
-     stream_sensor_data_normal_mode(&dev); // read and print sensor data
+    rslt = qmc_init(); // Magnetic sensor QMC7983 init 
+    rslt = bme280_init(&dev); // Temperature, humidity and pressure sensors BME280 init 
+    stream_sensor_data_normal_mode(&dev); // read and print sensor data
   ```
   
 * MaixPy 示例
