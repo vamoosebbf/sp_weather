@@ -110,10 +110,11 @@ SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置
 ## 运行结果
 
 * C
-
+  
     <img src="img/log_c.png" height="200">
-* MaixPy
 
+* MaixPy
+  
     <img src="img/log_py.png" height="200">
 
 ## 许可
