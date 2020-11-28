@@ -19,11 +19,9 @@ SP_Weather has two sensors, magnetic sensor QMC7983, which is a triaxial magneti
 *See [Specification](doc/SP-WEATHER规格书V1.0.pdf) for more information*
 
 ## Pin figure
-
 <img src="img/back.png" width="300" />
 
 ## Mode connection
-
 <img src="img/connection.png" height="250">
 
 |  MCU:FUN(IO)  | SP_Weather |
