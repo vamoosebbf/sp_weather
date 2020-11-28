@@ -59,7 +59,7 @@ The corresponding IO port in the MCU schematic diagram is configured as I2C func
 * C
 
   ```c
-   maix_i2c_init(WEATHER_I2C_DEVICE, 7, 400000); // WEATHER_I2C_DEVICE: 0;
+    maix_i2c_init(WEATHER_I2C_DEVICE, 7, 400000); // WEATHER_I2C_DEVICE: 0;
   ```
 
 * MaixPy

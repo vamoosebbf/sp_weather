@@ -61,7 +61,7 @@ SP_Weather 拥有两颗传感器， 磁性传感器 QMC7983，这是一个内置
 * C 示例
 
   ```c
-      maix_i2c_init(WEATHER_I2C_DEVICE, 7, 400000); // WEATHER_I2C_DEVICE: 0;
+    maix_i2c_init(WEATHER_I2C_DEVICE, 7, 400000); // WEATHER_I2C_DEVICE: 0;
   ```
 
 * MaixPy 示例
