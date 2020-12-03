@@ -92,8 +92,6 @@ SP_Weather 拥有两颗传感器, 磁性传感器 QMC7983, 这是一个内置灵
 
   ```python
     weather=SPWEATHER(i2c=i2c_bus) # create sp_weather
-    weather.qmc_init() # Magnetic sensor QMC7983 init 
-    weather.bme280_init() # Temperature, humidity and pressure sensors BME280 init 
     while 1:
         time.sleep_ms(500)
         print(weather.qmc_read_xyz) # QMC7983 read data
