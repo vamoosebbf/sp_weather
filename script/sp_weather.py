@@ -31,6 +31,8 @@ class SPWEATHER:
         if i2c is None:
             raise ValueError('An I2C object is required.')
         self.i2c = i2c
+        self.qmc_init() # Magnetic sensor QMC7983 init 
+        self.bme280_init() # Temperature, humidity and pressure sensors BME280 init 
 
     ################## QMCX983 ##################
     def qmc_init(self, qmc_address=QMCX983_I2CADDR, **kwargs):
@@ -233,7 +235,6 @@ class SPWEATHER:
 
 ################## SP_WEATHER Demo ##################
 if __name__ == "__main__":
-
     from machine import I2C
     import time
 
@@ -242,9 +243,6 @@ if __name__ == "__main__":
     print("I2C devices:" + str(i2c_devs_list))
 
     weather=SPWEATHER(i2c=i2c_bus) # create sp_weather
-    
-    weather.qmc_init() # Magnetic sensor QMC7983 init 
-    weather.bme280_init() # Temperature, humidity and pressure sensors BME280 init 
 
     while 1:
         time.sleep_ms(500)
