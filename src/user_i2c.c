@@ -32,7 +32,7 @@ int8_t bme280_i2c_write(uint8_t reg_addr, const uint8_t *data, uint32_t len, voi
     int ret;
     addr = *((uint8_t *)intf_ptr);
     w_buf[0] = reg_addr;
-    memcpy(w_buf[1], data, len);
+    memcpy(w_buf+1, data, len);
     ret = maix_i2c_send_data(WEATHER_I2C_DEVICE, addr, w_buf, len + 1, 5);
     free(w_buf);
     return ret;
