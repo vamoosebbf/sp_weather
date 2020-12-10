@@ -4,6 +4,8 @@
 
 [中文](README_CN.md)
 
+<img src="img/demo.gif"  align="right" width="300" />
+
 ## Directory Structure
 | Directory | Description                                   |
 | :-------: | :-------------------------------------------- |
