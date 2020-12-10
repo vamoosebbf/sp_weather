@@ -4,6 +4,8 @@
 
 [English](README.md)
 
+<img src="img/demo.gif" align="right" width="300" />
+
 ## 目录结构
 
 |  目录  | 描述           |
